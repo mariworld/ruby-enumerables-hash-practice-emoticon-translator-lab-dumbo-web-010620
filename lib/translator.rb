@@ -25,8 +25,8 @@ def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emot
    while i < emo_list.values.length do
      binding.pry
     if emo_list.values[i] == emo_list.values[i+1]
-      
-      end
+      emo_list.keys[i]
+      binding.pry
     end
     i += 1
   end
