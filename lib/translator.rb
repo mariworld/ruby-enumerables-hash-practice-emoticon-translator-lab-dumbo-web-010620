@@ -20,7 +20,7 @@ end
 
 def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
-  emo_list.each do |x,y| x,y
+  emo_list.each do |x,y| puts x,y
       binding.pry
     end
 
