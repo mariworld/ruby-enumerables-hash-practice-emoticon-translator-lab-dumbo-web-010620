@@ -37,6 +37,6 @@ def get_english_meaning(file_path = YAML.load_file('./lib/emoticons.yml'),emotic
   if e_meaning
     e_meaning
   else
-    
+    "Sorry, that emoticon was not found"
   binding.pry
 end
