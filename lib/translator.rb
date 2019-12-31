@@ -21,8 +21,9 @@ end
 def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
   emo_list.each do |key,value| 
+      binding.pry
     end
-  binding.pry
+
 end
 
 def get_english_meaning
