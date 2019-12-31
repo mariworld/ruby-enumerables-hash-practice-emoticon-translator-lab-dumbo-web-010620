@@ -20,6 +20,7 @@ end
 
 def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
+  #we want to access emo_list[:get_emoticon] values.
 end
 
 def get_english_meaning
