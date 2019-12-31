@@ -20,7 +20,7 @@ end
 
 def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
-  emoticon = emo_list[:get_meaning]
+  emoticon = emo_list[:get_meaning].include("grinning")
   binding.pry
 end
 
