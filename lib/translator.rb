@@ -32,5 +32,5 @@ end
 
 def get_english_meaning(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
-  emo_list = 
+  binding.pry
 end
