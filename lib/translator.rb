@@ -24,6 +24,7 @@ def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emot
   j_emo = emo_list[:get_emoticon][emoticon]
   if j_emo
     j_emo
+  else
     puts "Sorry, that emoticon was not found"
   end
   #binding.pry
