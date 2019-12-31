@@ -22,7 +22,7 @@ def get_japanese_emoticon(file_path = YAML.load_file('./lib/emoticons.yml'),emot
   emo_list = load_library(file_path)
   #we want to access emo_list[:get_emoticon] values when the grinning emoticon is typed
   j_emo = emo_list[:get_emoticon][emoticon]
-  binding.pry
+  #binding.pry
 end
 
 def get_english_meaning
