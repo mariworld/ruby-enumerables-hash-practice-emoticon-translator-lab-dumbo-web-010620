@@ -33,6 +33,10 @@ end
 def get_english_meaning(file_path = YAML.load_file('./lib/emoticons.yml'),emoticon)
   emo_list = load_library(file_path)
   #we want to access the emo_list[:get_meaning] values when the japanese emoticon is type
-  e_meaning = emo_list
+  e_meaning = emo_list[:get_meaning][emoticon]
+  if e_meaning
+    e_meaning
+  else
+    
   binding.pry
 end
